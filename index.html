@@ -8,62 +8,19 @@
         html { scroll-behavior: smooth; }
         body { font-family: sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; text-align: center; color: #333; }
         
-        /* 1. SECTION D'ACCUEIL (Titre, Phrases et Image d'accroche) */
+        /* SECTION D'ACCUEIL */
         .hero { background-color: #0073aa; color: white; padding: 40px 20px; }
         .hero h1 { font-size: 1.5rem; margin-bottom: 5px; text-transform: uppercase; }
         .hero .subtitle { font-size: 0.9rem; margin-bottom: 25px; opacity: 0.9; font-weight: bold; }
         .hero h2 { font-size: 1.8rem; margin: 25px 0; line-height: 1.3; }
-        
-        /* IMAGE D'ACCROCHE */
         .hero-img { width: 100%; max-width: 500px; border-radius: 8px; margin-bottom: 25px; }
-        
-        /* BOUTON EN SAVOIR PLUS */
-        .btn { 
-            display: inline-block; 
-            background-color: #0073aa; 
-            color: white; 
-            padding: 15px 35px; 
-            text-decoration: none; 
-            border-radius: 5px; 
-            font-weight: bold; 
-            border: 2px solid white;
-            font-size: 1.1rem;
-        }
+        .btn { display: inline-block; background-color: #0073aa; color: white; padding: 15px 35px; text-decoration: none; border-radius: 5px; font-weight: bold; border: 2px solid white; font-size: 1.1rem; }
 
-        /* 2. SECTION DU PREMIER PRODUIT */
-        .container { 
-            padding: 40px 20px; 
-            max-width: 600px; 
-            margin: 30px auto; 
-            background: white; 
-            border-radius: 12px; 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
-        }
-        
-        /* TITRE DU PRODUIT */
-        .product-title { 
-            color: #2563eb; 
-            font-weight: bold; 
-            text-transform: uppercase; 
-            font-size: 1.4rem; 
-            display: block; 
-            margin-bottom: 20px;
-        }
-        
-        /* PARAGRAPHE DU PRODUIT */
-        .product-text { 
-            font-size: 1.1rem; 
-            line-height: 1.6; 
-            color: #444;
-            text-align: left; /* Aligné à gauche comme sur ta capture */
-            margin-bottom: 25px;
-        }
-
-        /* IMAGE DU PRODUIT */
-        .product-img {
-            width: 100%;
-            border-radius: 8px;
-        }
+        /* SECTION DES PRODUITS */
+        .container { padding: 40px 20px; max-width: 600px; margin: 30px auto; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .product-title { color: #2563eb; font-weight: bold; text-transform: uppercase; font-size: 1.4rem; display: block; margin-bottom: 20px; }
+        .product-text { font-size: 1.1rem; line-height: 1.6; color: #444; text-align: left; margin-bottom: 25px; }
+        .product-img { width: 100%; border-radius: 8px; }
     </style>
 </head>
 <body>
@@ -72,25 +29,22 @@
         <h1>TECHSTORE</h1>
         <div class="subtitle">SOLUTIONS NUMÉRIQUES POUR TOUS</div>
         <h2>Découvrez nos solutions digitales modernes, simples et efficaces.</h2>
-        
         <img src="https://freelanceportfolio0.wordpress.com/wp-content/uploads/2026/02/images-4-1.jpeg" class="hero-img">
-        
         <br>
         <a href="#produit1" class="btn">En savoir plus</a>
     </div>
 
     <div class="container" id="produit1">
         <span class="product-title">Sites Vitrines MODERNES et responsives</span>
-        
         <p class="product-text">
             Présentez votre entreprise avec un site vitrine moderne, entièrement responsive et optimisé pour mobile. 
             Nos solutions permettent à vos visiteurs de naviguer facilement, tout en mettant en valeur vos produits 
             et services grâce à un design clair et attractif. Idéal pour renforcer votre présence en ligne et améliorer votre visibilité.
         </p>
-
         <img src="https://freelanceportfolio0.wordpress.com/wp-content/uploads/2026/02/images.jpeg" class="product-img">
     </div>
-<<div class="container">
+
+    <div class="container">
         <span class="product-title">Boutique E-Commerce intuitive</span>
         <p class="product-text">
             Vendez vos produits en ligne grâce à une boutique E-Commerce intuitive et facile à gérer. 
@@ -99,3 +53,6 @@
         </p>
         <img src="https://freelanceportfolio0.wordpress.com/wp-content/uploads/2026/02/ecommerce-web-page-concept-illustration_114360-8204.jpg" class="product-img">
     </div>
+
+</body>
+</html>
