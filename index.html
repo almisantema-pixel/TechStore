@@ -6,49 +6,88 @@
     <title>TechStore</title>
     <style>
         html { scroll-behavior: smooth; }
-        body { font-family: sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; text-align: center; }
+        body { font-family: sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; text-align: center; color: #333; }
         
-        /* Section Bleue du haut */
-        .hero { 
+        /* 1. ENTETE ET ACCROCHE (Section Bleue) */
+        .hero { background-color: #0073aa; color: white; padding: 40px 20px; }
+        .hero h1 { font-size: 1.5rem; margin-bottom: 5px; text-transform: uppercase; }
+        .hero .subtitle { font-size: 0.9rem; margin-bottom: 20px; opacity: 0.9; }
+        .hero h2 { font-size: 1.8rem; margin: 20px 0; line-height: 1.2; }
+        
+        /* 2. IMAGE D'ACCROCHE */
+        .hero-img { width: 100%; max-width: 500px; border-radius: 8px; margin-bottom: 20px; }
+        
+        /* 3. BOUTON */
+        .btn { 
+            display: inline-block; 
             background-color: #0073aa; 
             color: white; 
-            padding: 40px 20px; 
-        }
-        .hero h1 { margin: 0; font-size: 1.2rem; text-transform: uppercase; }
-        .hero h2 { font-size: 2rem; margin: 20px 0; }
-        .hero-img { width: 100%; max-width: 500px; border-radius: 10px; margin-bottom: 20px; }
-        
-        /* Le Bouton */
-        .btn {
-            display: inline-block;
-            background-color: #0073aa;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            border: 2px solid white; /* Pour qu'il ressorte bien */
+            padding: 12px 30px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            border: 2px solid white; 
+            margin-bottom: 10px;
         }
 
-        /* Zone des produits */
-        .container { padding: 20px; max-width: 600px; margin: auto; }
-        .product-img { width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        /* SECTION PRODUIT */
+        .container { 
+            padding: 40px 20px; 
+            max-width: 600px; 
+            margin: 20px auto; 
+            background: white; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        
+        /* 4. TITRE DU PRODUIT */
+        .product-title { 
+            color: #2563eb; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            font-size: 1.4rem; 
+            display: block; 
+            margin-bottom: 20px;
+        }
+        
+        /* 5. PARAGRAPHE */
+        .product-text { 
+            font-size: 1.1rem; 
+            line-height: 1.6; 
+            color: #444;
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        /* 6. IMAGE DU PRODUIT */
+        .product-img {
+            width: 100%;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
 
     <div class="hero">
-        <h1>TECHSTORE - SOLUTIONS NUMÉRIQUES POUR TOUS</h1>
+        <h1>TECHSTORE</h1>
+        <div class="subtitle">SOLUTIONS NUMÉRIQUES POUR TOUS</div>
         <h2>Découvrez nos solutions digitales modernes, simples et efficaces.</h2>
         
         <img src="https://freelanceportfolio0.wordpress.com/wp-content/uploads/2026/02/images-4-1.jpeg" class="hero-img">
         
         <br>
-        
         <a href="#produit1" class="btn">En savoir plus</a>
     </div>
 
     <div class="container" id="produit1">
+        <span class="product-title">Sites Vitrines MODERNES et responsives</span>
+        
+        <p class="product-text">
+            Présentez votre entreprise avec un site vitrine moderne, entièrement responsive et optimisé pour mobile. 
+            Nos solutions permettent à vos visiteurs de naviguer facilement, tout en mettant en valeur vos produits 
+            et services grâce à un design clair et attractif. Idéal pour renforcer votre présence en ligne et améliorer votre visibilité.
+        </p>
+
         <img src="https://freelanceportfolio0.wordpress.com/wp-content/uploads/2026/02/images.jpeg" class="product-img">
     </div>
 
